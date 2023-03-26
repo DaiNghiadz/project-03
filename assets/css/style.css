@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2e80ce;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+/* common */
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    min-width: 205px;
+    padding: 20px 70px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+    background: var(--primary-color);
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Header */
+
+.header {
+    height: 100vh;
+    background: #10375c;
+    padding: 36px 0;
+}
+
+.logo {
+    position: relative;
+    font-size: 1rem;
+    display: inline-flex;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: var(--primary-color);
+}
+
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #ffffff;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right;
+}
+
+.logo__brand {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.logo__brand--small {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.17em;
+}
+/* navbar */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav__list {
+    display: flex;
+    position: relative;
+}
+
+.nav__link,
+.nav__login {
+    padding: 4px 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #c9d2da;
+}
+
+.nav__link--circle {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.nav__link--circle::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    left: 5px;
+    top: 4.5px;
+}
+
+.nav__link:hover,
+.nav__link--circle {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.nav__action {
+    margin-left: 201px;
+}
+
+.nav__btn {
+    margin-left: 7px;
+    min-width: 104px;
+    padding: 12px 20px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+}
