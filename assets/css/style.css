@@ -50,7 +50,7 @@ a {
 .header {
     height: 100vh;
     background: #10375c;
-    padding: 36px 0;
+    padding-top: 36px 0 110px;
 }
 
 .logo {
@@ -157,4 +157,61 @@ a {
 /* Hero */
 .hero {
     display: flex;
+    margin-top: 83px;
+}
+
+.hero__info {
+    margin-top: 60px;
+    width: 44%;
+}
+
+.hero__title {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__cta {
+    margin-top: 38px;
+}
+
+.hero__phone-number {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero__images {
+    margin-left: 113px;
+    position: relative;
+}
+
+.hero__img--after .hero__img {
+    position: absolute;
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__img--before .hero__img {
+    position: absolute;
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 0px 6px 6px 0px;
+    left: 324px;
+    top: 65px;
 }
