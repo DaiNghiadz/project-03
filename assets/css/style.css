@@ -463,18 +463,12 @@ a {
 /* Doctor */
 
 .doctor {
-    text-align: center;
-}
-
-.doctor__body {
-    margin-top: 85px;
     padding: 85px 0;
 }
 
 .doctor__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 85px;
+    text-align: center;
 }
 
 .doctor__heading {
@@ -488,4 +482,74 @@ a {
 
 .doctor__btn {
     margin-top: 38px;
+}
+
+.doctor__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.doctor-item__img--bg {
+    padding-top: 28px;
+    background: #eaf6ff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item__img {
+    max-width: 100%;
+    height: 290px;
+    display: block;
+    object-fit: cover;
+}
+
+.doctor-item__name {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #10375c;
+}
+
+.doctor-item__title {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #575f66;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+    margin-top: 38px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    outline: none;
+    color: #575f66;
+    background: #fff;
+}
+
+.control-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    border-color: #2e80ce;
+    background: #2e80ce;
+    transition: 0.25s;
+}
+
+.control-icon--previous {
+    rotate: 180deg;
 }
