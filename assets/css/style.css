@@ -364,12 +364,9 @@ a {
 }
 
 .work-item:hover {
+    margin-top: -16px;
     border-color: #2e80ce;
     transition: 0.25s;
-}
-
-.work-item + .work-item {
-    margin-top: 16px;
 }
 
 .work-item__title {
@@ -751,6 +748,7 @@ a {
 /* footer */
 
 .footer {
+    margin-top: 85px;
     padding: 100px 0 42px;
     background: #10375c;
     font-family: "Open Sans", sans-serif;
