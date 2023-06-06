@@ -508,6 +508,7 @@ a {
 }
 
 .doctor-item__name {
+    text-align: center;
     margin-top: 12px;
     font-weight: 400;
     font-size: 1.6rem;
